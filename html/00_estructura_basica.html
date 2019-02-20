@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script>
+
+        $(function(){
+          //$("head").load("../componentes/head_tags.html");
+          //$("body").load("../componentes/basic_scripts.html ../componentes/header.html ../componentes/breadcrumbs.html");
+          //$("body").load("");
+          //$("main").load("../componentes/breadcrumbs.html");
+          //$("#footer").load("footer.html");
+
+          jQuery.ajaxSetup({ async: false });
+          $.get("../componentes/head_tags.html", '', function (data) { $("head").append(data); });
+          $.get("../componentes/header.html", '', function (data) { $("body").append(data); });
+          $.get("../componentes/breadcrumbs.html", '', function (data) { $("body").append(data); });
+          $.get("../componentes/basic_slider.html", '', function (data) { $("body").append(data); });
+          $.get("../componentes/basic_footer.html", '', function (data) { $("body").append(data); });
+
+          
+
+          $.get("../componentes/basic_scripts.html", '', function (data) { $("body").append(data); });
+
+        });
+
+    </script>
+  </head>
+
+
+  <body>
+
+  </body>
+
+</html>
