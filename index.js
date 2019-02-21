@@ -23,6 +23,8 @@ const findFiles = function(dir){
 
 findFiles(htmlDir);
 
+
+
 // fs.readdirSync(htmlDir).forEach(file => {
     // let readFile = file;
 //   (function(file) {
