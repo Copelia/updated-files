@@ -8,14 +8,16 @@
 </head>
 <body>
     <div>
-        <button id="findDate">Encontrar</button>
         <ul>
             <li>
                 <a href="html/00_estructura_basica.html">00_estructura_basica</a>
             </li>
+        
+            <% sortedFiles.forEach(function(file) { %>
+                <li><%= file.filename %> - <%= file.modified %></li>
+            <% }); %>
         </ul>
     </div>
     
-    <script src="index.js"></script>
 </body>
 </html>
